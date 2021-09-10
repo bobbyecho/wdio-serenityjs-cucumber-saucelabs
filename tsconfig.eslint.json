@@ -1,7 +1,7 @@
 {
   "extends": "./tsconfig",
   "include": [
-    "features/**/*.ts",
+    "src/features/**/*.ts",
     "wdio.conf.ts"
   ],
   "exclude": [

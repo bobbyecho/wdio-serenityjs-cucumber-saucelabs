@@ -8,17 +8,20 @@
     "experimentalDecorators": true,
     "sourceMap": true,
     "declaration": true,
-    "rootDir": "./features",
+    "rootDir": "./src",
     "types": [
       "node",
       "webdriverio/async"
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@screenplay/*": ["./src/screenplay/*"]
+    }
   },
-
   "include": [
-    "features/**/*.ts",
+    "src/features/**/*.ts",
+    "src/typings/wdio.d.ts"
   ],
-
   "exclude": [
     "node_modules"
   ]
